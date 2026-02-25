@@ -177,8 +177,8 @@ export default function Home() {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">circle</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/paddle-blind.png" alt="Paddle Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Paddle Blinds</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Standard isolation paddle blinds available in all pressure classes.</p>
@@ -187,8 +187,8 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">visibility</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/spectacle-blind.png" alt="Spectacle Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Spectacle Blinds</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Figure-8 style blinds for permanent installation or frequent use.</p>
@@ -197,8 +197,8 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">donut_large</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/slip-blind.png" alt="Slip Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Slip Blinds</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Versatile slip blinds designed for insertion between flanges.</p>
@@ -207,8 +207,8 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">settings_input_component</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/blind-flange.png" alt="Blind Flange" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Blind Flanges</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Heavy-duty blind flanges for end-of-line isolation.</p>
@@ -217,8 +217,8 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">water_drop</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/hydrotest-blind.png" alt="Hydrotest Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Hydrotest Blinds</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">High-pressure rated blinds specifically for hydrotesting.</p>
@@ -227,8 +227,8 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
-                                        <span className="material-icons text-6xl text-gray-400">handyman</span>
+                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                        <img src="/custom-blind.png" alt="Custom Fabrication" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Custom Fabrication</h4>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Need specific dimensions? We offer custom fabrication services.</p>
