@@ -14,8 +14,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Patriot Blind Solutions - Industrial Positive Isolation",
-  description: "High-end B2B industrial landing page for Patriot Blind Solutions",
+  title: "Patriot Blind Solutions | Houston, TX — Industrial Positive Isolation",
+  description: "Patriot Blind Solutions, based in Houston, TX, is the nationwide leader in industrial Blinding Management Systems. Providing critical positive isolation support for large-scale refinery and chemical plant turnarounds.",
 };
 
 export default function RootLayout({
