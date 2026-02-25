@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${inter.variable} ${roboto.variable} bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-body antialiased transition-colors duration-200`}
+        className={`${inter.variable} ${roboto.variable} bg-white text-gray-900 font-body antialiased`}
       >
         {children}
       </body>
