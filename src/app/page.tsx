@@ -131,12 +131,8 @@ export default function Home() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="lg:w-1/2 bg-white dark:bg-gray-900 flex items-center justify-center relative">
-                            <div className="relative w-full h-64 lg:h-full">
-                                <img alt="Heavy Duty Industrial Blind Rack with Steel Paddle Blinds" className="w-full h-full object-cover" src="/flyer.png" />
-                                <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-gray-50 to-transparent dark:from-gray-800 lg:hidden"></div>
-                                <div className="absolute inset-0 bg-gradient-to-l from-transparent to-gray-50 dark:to-gray-800 lg:w-24 hidden lg:block"></div>
-                            </div>
+                        <div className="lg:w-1/2 bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                            <img alt="Patriot Blind Solutions Logo" className="w-48 h-auto object-contain" src="/logo.png" />
                         </div>
                     </div>
                 </div>
@@ -243,49 +239,74 @@ export default function Home() {
                             </div>
                             <div className="mt-16" id="specs">
                                 <h3 className="text-2xl font-extrabold text-gray-900 dark:text-white font-display mb-6">Industrial Engineering Specifications</h3>
-                                <div className="overflow-x-auto shadow-md rounded-lg border border-gray-300 dark:border-gray-700">
-                                    <table className="min-w-full divide-y divide-gray-300 dark:divide-gray-700">
-                                        <thead className="bg-secondary">
-                                            <tr>
-                                                <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Blind Type</th>
-                                                <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Available Sizes (NPS)</th>
-                                                <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Pressure Class (ANSI)</th>
-                                                <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Standard Materials</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                                            <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Paddle Blinds</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 72"</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
-                                            </tr>
-                                            <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Spectacle Blinds</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
-                                            </tr>
-                                            <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Slip Blinds / Spacers</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 60"</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 1500#</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">Carbon, SS, Alloys</td>
-                                            </tr>
-                                            <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Blind Flanges</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A105, A350 LF2</td>
-                                            </tr>
-                                            <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Hydrotest Blinds</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">Custom Spec</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">Up to 10,000 PSI</td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">High Yield Carbon</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div className="w-full rounded-lg border border-gray-300 dark:border-gray-700 shadow-md overflow-hidden">
+                                    {/* Desktop table */}
+                                    <div className="hidden sm:block overflow-x-auto">
+                                        <table className="min-w-full divide-y divide-gray-300 dark:divide-gray-700">
+                                            <thead className="bg-secondary">
+                                                <tr>
+                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Blind Type</th>
+                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Available Sizes (NPS)</th>
+                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Pressure Class (ANSI)</th>
+                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Standard Materials</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Paddle Blinds</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 72"</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
+                                                </tr>
+                                                <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Spectacle Blinds</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
+                                                </tr>
+                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Slip Blinds / Spacers</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 60"</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 1500#</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">Carbon, SS, Alloys</td>
+                                                </tr>
+                                                <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Blind Flanges</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A105, A350 LF2</td>
+                                                </tr>
+                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Hydrotest Blinds</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Custom Spec</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Up to 10,000 PSI</td>
+                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">High Yield Carbon</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    {/* Mobile stacked cards */}
+                                    <div className="sm:hidden divide-y divide-gray-200 dark:divide-gray-700">
+                                        {[
+                                            { type: "Paddle Blinds", sizes: '1/2" – 72"', pressure: "150# – 2500#", material: "A516-70, 304/316 SS" },
+                                            { type: "Spectacle Blinds", sizes: '1/2" – 48"', pressure: "150# – 2500#", material: "A516-70, 304/316 SS" },
+                                            { type: "Slip Blinds / Spacers", sizes: '1/2" – 60"', pressure: "150# – 1500#", material: "Carbon, SS, Alloys" },
+                                            { type: "Blind Flanges", sizes: '1/2" – 48"', pressure: "150# – 2500#", material: "A105, A350 LF2" },
+                                            { type: "Hydrotest Blinds", sizes: "Custom Spec", pressure: "Up to 10,000 PSI", material: "High Yield Carbon" },
+                                        ].map((row, i) => (
+                                            <div key={i} className={`p-4 ${i % 2 === 0 ? "bg-white dark:bg-gray-800" : "bg-gray-50 dark:bg-gray-900/50"}`}>
+                                                <p className="font-bold text-gray-900 dark:text-white mb-2">{row.type}</p>
+                                                <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Sizes (NPS)</span>
+                                                    <span className="text-gray-700 dark:text-gray-300">{row.sizes}</span>
+                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Pressure Class</span>
+                                                    <span className="text-gray-700 dark:text-gray-300">{row.pressure}</span>
+                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Materials</span>
+                                                    <span className="text-gray-700 dark:text-gray-300 font-mono text-xs">{row.material}</span>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +432,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                     <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                         <div className="space-y-8 xl:col-span-1">
-                            <img alt="Patriot Blind Solutions" className="h-12 w-auto brightness-0 invert" src="/logo.png" />
+                            <img alt="Patriot Blind Solutions" className="h-12 w-auto" src="/logo.png" />
                             <p className="text-gray-300 text-sm leading-6">The nationwide leader in industrial Blinding Management Systems. Providing critical positive isolation support for large-scale refinery and chemical plant turnarounds.</p>
                             <div className="flex space-x-6">
                                 <a className="text-gray-400 hover:text-white" href="#">
