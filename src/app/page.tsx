@@ -24,8 +24,12 @@ export default function Home() {
                                 24/7 Support: 832-488-3168
                             </a>
                         </div>
-                        <div className="flex items-center md:hidden">
-                            <button aria-controls="mobile-menu" aria-expanded="false" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary" type="button">
+                        <div className="flex items-center gap-2 md:hidden">
+                            <a href="tel:8324883168" className="inline-flex items-center justify-center px-3 py-2 rounded-md text-white bg-primary text-sm font-bold">
+                                <span className="material-icons text-base mr-1">phone</span>
+                                <span>Call Now</span>
+                            </a>
+                            <button aria-controls="mobile-menu" aria-expanded="false" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary" type="button">
                                 <span className="sr-only">Open main menu</span>
                                 <span className="material-icons">menu</span>
                             </button>
@@ -495,6 +499,14 @@ export default function Home() {
                     </div>
                 </div>
             </footer>
+
+            {/* Mobile sticky emergency call bar */}
+            <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary shadow-2xl">
+                <a href="tel:8324883168" className="flex items-center justify-center gap-3 py-4 text-white font-bold text-base w-full">
+                    <span className="material-icons text-xl">phone</span>
+                    <span>24/7 Emergency Support: 832-488-3168</span>
+                </a>
+            </div>
 
         </>
     );
