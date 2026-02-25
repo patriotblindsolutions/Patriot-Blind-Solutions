@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #D32F2F;
+  --color-secondary: #1A365D;
+  --color-background-light: #F9FAFB;
+  --color-background-dark: #111827;
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark: #1F2937;
+  --color-steel-gray: #94a3b8;
+
+  --font-display: var(--font-roboto), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+@layer utilities {
+  .segmented-control-input:checked + label {
+    @apply bg-secondary text-white shadow-sm ring-1 ring-black/5;
+  }
+  .segmented-control-input:not(:checked) + label {
+    @apply text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50;
+  }
+}

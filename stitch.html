@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patriot Blind Solutions - Industrial Positive Isolation</title>
+<meta content="High-end B2B industrial landing page for Patriot Blind Solutions" name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D32F2F",secondary: "#1A365D","background-light": "#F9FAFB",
+              "background-dark": "#111827",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1F2937",
+              "steel-gray": "#94a3b8",
+            },
+            fontFamily: {
+              display: ["Roboto", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Roboto:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+  @layer utilities {
+    .segmented-control-input:checked + label {
+      @apply bg-secondary text-white shadow-sm ring-1 ring-black/5;
+    }
+    .segmented-control-input:not(:checked) + label {
+      @apply text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50;
+    }
+  }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-body antialiased transition-colors duration-200">
+<header class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-700">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<img alt="Patriot Blind Solutions Logo" class="h-16 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZbNN7ysfTH2CHAhaodfEqIGhBTjzZczyGxqTXIayOy8VKRz_N52OC_WSgxQJpghGzmetcu5r0mb7-oFP-1VK879T0BnPYj-hiNlLiXaWKR8A1t2hX2EIZHwW_rx-UYiBLrqhJt0VUqkCwb9TW_OxAldf0hlbH3h3Lzi8FIiUduE4Dt6s4_4CLjtae-EwFaVffY08CJBknk9i8C1lHYIKdJR3xmiyCnP3GSvoaW13fgv8J0NhBb48mgXL_s5MKVvV24VBrmimCFQ"/>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Blinding Management</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#inventory">Isolation Inventory</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#specs">Technical Specs</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#quote">Contact</a>
+</nav>
+<div class="hidden md:flex items-center">
+<a class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors" href="tel:8324883168">
+<span class="material-icons mr-2 text-sm">phone</span>
+                        24/7 Support: 832-488-3168
+                    </a>
+</div>
+<div class="flex items-center md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary" type="button">
+<span class="sr-only">Open main menu</span>
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden md:hidden bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700" id="mobile-menu">
+<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+<a class="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#">Blinding Management</a>
+<a class="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#inventory">Isolation Inventory</a>
+<a class="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#specs">Technical Specs</a>
+<a class="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#quote">Contact</a>
+<a class="block w-full text-center px-4 py-3 mt-4 rounded-md shadow-sm text-base font-bold text-white bg-primary hover:bg-red-700" href="tel:8324883168">
+                    Call 24/7 Support
+                </a>
+</div>
+</div>
+</header>
+<div class="relative bg-secondary dark:bg-gray-900 overflow-hidden">
+<div class="absolute inset-0">
+<img alt="Industrial Refinery Background" class="w-full h-full object-cover opacity-20 dark:opacity-30 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfmM-2KvjBMtk4Qfu7jjwj4xLkwNN5TneAUQz0AX6fGSS_7b2KAWXP60Mt6IG2OW1fbpqUyu8SIzzb_ljBPBQKgUYHSjuU9dPuMNGoqobQOFYii1lVG2z3GHrYjZZQpIttfiFpAZKYrLwS2SjRgsTSBTsckHxldEYySHk8k0hQQ3KHlHntT09dcEYPAlkSGhs-WGnhE6JrnDhPf4fCpWHUuoJz6Tw5oqPqV_PY5b-TWOQAIpMYXik1Jq0--XShsquE4DSYsCO30QM"/>
+<div aria-hidden="true" class="absolute inset-0 bg-secondary/80 dark:bg-black/80 mix-blend-multiply"></div>
+<div aria-hidden="true" class="absolute inset-0 bg-gradient-to-r from-secondary/90 to-transparent dark:from-black/90"></div>
+</div>
+<div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+<h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-display uppercase text-left">Positive <span class="text-primary">Isolation</span> Management.<br/>Turnaround Solutions Ready.</h1>
+<p class="mt-6 text-xl text-gray-200 max-w-3xl text-left">The industry's most comprehensive Blinding Management System for refineries and chemical plants. We provide full-scale positive isolation solutions with meticulous tracking and MTR accountability for your critical turnarounds.</p>
+<div class="mt-10 max-w-sm sm:max-w-none flex justify-start">
+<div class="space-y-4 sm:space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-5">
+<a class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-red-700 sm:px-8" href="#quote">
+                        Request a Quote
+                    </a>
+<a class="flex items-center justify-center px-4 py-3 border border-gray-300 dark:border-gray-500 text-base font-medium rounded-md shadow-sm text-white bg-transparent hover:bg-white/10 sm:px-8" href="#inventory">
+                        View Inventory
+                    </a>
+</div>
+</div>
+</div>
+</div>
+<section class="py-16 bg-surface-light dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-base text-primary font-semibold tracking-wide uppercase">Industrial Blinding Management System</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl font-display">Engineered for Critical Turnarounds</p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">Our system ensures 100% positive isolation compliance through precision inventory tracking and custom industrial rack systems, eliminating lost tool time in high-stakes environments.</p>
+</div>
+<div class="mt-10">
+<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+<div class="relative">
+<dt>
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
+<span class="material-icons">storage</span>
+</div>
+<p class="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">Custom Steel Blind Racks</p>
+</dt>
+<dd class="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
+                            Heavy-duty, organized, labeled, and lockable racks ensuring your isolation blinds are stored safely and accessible. Core differentiator for job site safety and efficiency.
+                        </dd>
+</div>
+<div class="relative">
+<dt>
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
+<span class="material-icons">qr_code_scanner</span>
+</div>
+<p class="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">Precision Inventory Tracking</p>
+</dt>
+<dd class="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
+                            Eliminate lost blinds and maximize tool time with our meticulous tracking system. Real-time accountability for every piece of isolation hardware on your site.
+                        </dd>
+</div>
+<div class="relative">
+<dt>
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
+<span class="material-icons">local_shipping</span>
+</div>
+<p class="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">24/7 Turnaround Logistics</p>
+</dt>
+<dd class="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
+                            Fast response &amp; flexible logistics for shutdowns. Whether it's a scheduled delivery or emergency response, our industrial support team is available around the clock.
+                        </dd>
+</div>
+</dl>
+</div>
+<div class="mt-16 bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 lg:flex">
+<div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Storage &amp; Jobsite Support</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<span class="material-icons text-primary mr-2">check_circle</span>
+<span class="text-gray-600 dark:text-gray-300">Industrial blind racks available for rent</span>
+</li>
+<li class="flex items-start">
+<span class="material-icons text-primary mr-2">check_circle</span>
+<span class="text-gray-600 dark:text-gray-300">Organized jobsite storage &amp; staging systems</span>
+</li>
+<li class="flex items-start">
+<span class="material-icons text-primary mr-2">check_circle</span>
+<span class="text-gray-600 dark:text-gray-300">Fast response &amp; flexible logistics</span>
+</li>
+<li class="flex items-start">
+<span class="material-icons text-primary mr-2">check_circle</span>
+<span class="text-gray-600 dark:text-gray-300">Experienced refinery support personnel</span>
+</li>
+</ul>
+</div>
+<div class="lg:w-1/2 bg-white dark:bg-gray-900 flex items-center justify-center relative">
+<div class="relative w-full h-64 lg:h-full">
+<img alt="Heavy Duty Industrial Blind Rack with Steel Paddle Blinds" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTFKGSaNRPX8iKp39iSI6rL8-QKyh58eJHYlWXl7jVaEDmSyD-FBp_witbaApDcM63MajBs788ssmQku9DlHHPd_RQyoYUzf4gJ97XO3-y4RlVrM-YU8IkmD-YiecwQXxR7D3wnyQsOvz5dY84o9bsB9GxLSLLZGpMZyH3jocIPls1zDkOvHDlXBdllwjaY7iOjD-bB2xgb8Kru2kGgJGOiT0pXSX6kMezmRekVDcd6nsw_6ndb-ASY-ZQm_CTLXphs8Zps8O_MgI"/>
+<div class="absolute inset-0 bg-gradient-to-l from-transparent to-gray-50 dark:to-gray-800 lg:w-24"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" id="inventory">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+<div class="lg:col-span-3 mb-8 lg:mb-0">
+<nav class="sticky top-24">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 border-b pb-2 dark:border-gray-600">Standard Materials</h3>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center text-gray-600 dark:text-gray-300">
+<span class="w-2 h-2 bg-secondary rounded-full mr-2"></span>
+                                ASTM A516 Grade 70
+                            </li>
+<li class="flex items-center text-gray-600 dark:text-gray-300">
+<span class="w-2 h-2 bg-secondary rounded-full mr-2"></span>
+                                A36 Carbon Steel
+                            </li>
+<li class="flex items-center text-gray-600 dark:text-gray-300">
+<span class="w-2 h-2 bg-secondary rounded-full mr-2"></span>
+                                Stainless 304 &amp; 316
+                            </li>
+<li class="flex items-center text-gray-600 dark:text-gray-300">
+<span class="w-2 h-2 bg-secondary rounded-full mr-2"></span>
+                                Specialty Alloys (Monel, Inconel)
+                            </li>
+</ul>
+<div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 border-l-4 border-l-primary">
+<div class="flex items-center mb-2">
+<span class="material-icons text-primary mr-2">verified_user</span>
+<span class="font-bold text-gray-900 dark:text-white text-sm">Quality Assurance</span>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400"><strong class="text-gray-900 dark:text-white block mb-1 uppercase">Full MTR Documentation</strong> Included with every delivery. Traceability reports available upon request.</p>
+</div>
+</nav>
+</div>
+<div class="lg:col-span-9">
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold text-gray-900 dark:text-white font-display">Technical Inventory</h2>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Comprehensive selection of isolation blinds for immediate refinery deployment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">circle</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Paddle Blinds</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Standard isolation paddle blinds available in all pressure classes.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
+                                View Specs <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">visibility</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Spectacle Blinds</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Figure-8 style blinds for permanent installation or frequent use.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
+                                View Specs <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">donut_large</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Slip Blinds</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Versatile slip blinds designed for insertion between flanges.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
+                                View Specs <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">settings_input_component</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Blind Flanges</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Heavy-duty blind flanges for end-of-line isolation.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
+                                View Specs <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">water_drop</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Hydrotest Blinds</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">High-pressure rated blinds specifically for hydrotesting.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
+                                View Specs <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
+<div class="h-32 bg-gray-100 dark:bg-gray-700 rounded mb-4 flex items-center justify-center">
+<span class="material-icons text-6xl text-gray-400">handyman</span>
+</div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Custom Fabrication</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Need specific dimensions? We offer custom fabrication services.</p>
+<a class="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#quote">
+                                Contact Us <span class="material-icons text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="mt-16" id="specs">
+<h3 class="text-2xl font-extrabold text-gray-900 dark:text-white font-display mb-6">Industrial Engineering Specifications</h3>
+<div class="overflow-x-auto shadow-md rounded-lg border border-gray-300 dark:border-gray-700">
+<table class="min-w-full divide-y divide-gray-300 dark:divide-gray-700">
+<thead class="bg-secondary">
+<tr>
+<th class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Blind Type</th>
+<th class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Available Sizes (NPS)</th>
+<th class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Pressure Class (ANSI)</th>
+<th class="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Standard Materials</th>
+</tr>
+</thead>
+<tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+<tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Paddle Blinds</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 72"</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
+</tr>
+<tr class="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Spectacle Blinds</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
+</tr>
+<tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Slip Blinds / Spacers</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 60"</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 1500#</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">Carbon, SS, Alloys</td>
+</tr>
+<tr class="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Blind Flanges</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A105, A350 LF2</td>
+</tr>
+<tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900 dark:text-white">Hydrotest Blinds</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">Custom Spec</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">Up to 10,000 PSI</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">High Yield Carbon</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-surface-light dark:bg-surface-dark relative" id="quote">
+<div class="absolute top-0 bottom-0 right-0 w-1/2 bg-gray-100 dark:bg-gray-900 hidden lg:block"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+<div class="lg:col-span-5 mb-10 lg:mb-0 pt-10">
+<h2 class="text-3xl font-extrabold text-gray-900 dark:text-white font-display">Request Industrial Quote</h2>
+<p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
+                        Provide your turnaround details below. Our technical team will review your specs and provide a comprehensive proposal including MTR availability within 24 hours.
+                    </p>
+<div class="mt-8 space-y-4">
+<div class="flex items-center">
+<span class="material-icons text-primary mr-3">email</span>
+<span class="text-gray-700 dark:text-gray-300">cdunkin@dfcindustrial.com</span>
+</div>
+<div class="flex items-center">
+<span class="material-icons text-primary mr-3">phone</span>
+<span class="text-gray-700 dark:text-gray-300">832 488 3168</span>
+</div>
+<div class="flex items-center">
+<span class="material-icons text-primary mr-3">location_on</span>
+<span class="text-gray-700 dark:text-gray-300">Houston, Texas</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<form action="#" class="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 sm:p-10 border border-gray-200 dark:border-gray-700" method="POST">
+<div class="mb-8 w-full">
+<div class="grid grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600 relative">
+<div class="relative">
+<input checked="" class="segmented-control-input sr-only peer" id="rental_short" name="rental_type" type="radio" value="short-term"/>
+<label class="block w-full text-center py-2.5 px-4 text-sm font-bold rounded-md cursor-pointer transition-all duration-200 ease-in-out" for="rental_short">
+                              Turnaround Rental
+                            </label>
+</div>
+<div class="relative">
+<input class="segmented-control-input sr-only peer" id="rental_perm" name="rental_type" type="radio" value="permanent"/>
+<label class="block w-full text-center py-2.5 px-4 text-sm font-bold rounded-md cursor-pointer transition-all duration-200 ease-in-out" for="rental_perm">
+                              Permanent Purchase
+                            </label>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="first-name">First name</label>
+<div class="mt-1">
+<input autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="first-name" name="first-name" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="last-name">Last name</label>
+<div class="mt-1">
+<input autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="last-name" name="last-name" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="company">Company / Contractor</label>
+<div class="mt-1">
+<input autocomplete="organization" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="company" name="company" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Work Email</label>
+<div class="mt-1">
+<input autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="email" name="email" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="project-name">Project/Site Name</label>
+<div class="mt-1">
+<input class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="project-name" name="project-name" placeholder="e.g. 2024 Fall Turnaround" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="plant-location">Plant Location</label>
+<div class="mt-1">
+<input class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="plant-location" name="plant-location" placeholder="City, State" required="" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="dates">Dates Needed</label>
+<div class="mt-1">
+<input class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="dates" name="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="specs">Upload Specs / Blind List (Optional)</label>
+<div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-md bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer">
+<div class="space-y-1 text-center">
+<svg aria-hidden="true" class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 48 48">
+<path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<div class="flex text-sm text-gray-600 dark:text-gray-300">
+<label class="relative cursor-pointer rounded-md font-medium text-primary hover:text-red-700 focus-within:outline-none" for="file-upload">
+<span>Upload a file</span>
+<input class="sr-only" id="file-upload" name="file-upload" type="file"/>
+</label>
+<p class="pl-1">or drag and drop</p>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400">PDF, Excel, JPG up to 10MB</p>
+</div>
+</div>
+</div>
+<div class="sm:col-span-2">
+<button class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors" type="submit">
+                                    Submit Industrial Request
+                                </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer aria-labelledby="footer-heading" class="bg-secondary dark:bg-black">
+<h2 class="sr-only" id="footer-heading">Footer</h2>
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+<div class="xl:grid xl:grid-cols-3 xl:gap-8">
+<div class="space-y-8 xl:col-span-1">
+<img alt="Patriot Blind Solutions" class="h-12 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK_syWAd3atPHF8r7pH4x15csXpz3hP_lPJBsFo6I-a9_NMkLFLwCKaEJfOpZ8N5_mZnywyi6nb4ZY_KXmPOCAjKwpWeM2ytbQwNxL0U_QcI5l0IbDDGXvlGdTgVSbWtf9WwEcX5aR-Ok9Pa3e1K56g_twpiDTuMu_Yvd0wLNzm5CoWzdyqlMSqvPiMWkGITtMh97wvlEQVvERIGz_GofDbNA3EMz_IWs2g0_YiLTnn8SZbj-7rB-tvG_dT7uIGtM56riV5PkuV-A"/>
+<p class="text-gray-300 text-sm leading-6">The nationwide leader in industrial Blinding Management Systems. Providing critical positive isolation support for large-scale refinery and chemical plant turnarounds.</p>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Products</h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Isolation Blinds</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Spectacle Blinds</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Slip Blinds</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Blind Flanges</a></li>
+</ul>
+</div>
+<div class="mt-12 md:mt-0">
+<h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Support</h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Rent vs Purchase</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Logistics</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">MTR Documentation</a></li>
+<li><a class="text-base text-gray-400 hover:text-white" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="md:grid md:grid-cols-1 md:gap-8">
+<div>
+<h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
+<ul class="mt-4 space-y-4">
+<li class="text-base text-gray-400">
+<span class="block text-white font-medium">Christopher Dunkin</span>
+                                    Nationwide Blinding Solutions
+                                </li>
+<li>
+<a class="text-base text-gray-400 hover:text-white flex items-center" href="tel:8324883168">
+<span class="material-icons text-sm mr-2 text-primary">phone</span> 832 488 3168
+                                    </a>
+</li>
+<li>
+<a class="text-base text-gray-400 hover:text-white flex items-center" href="mailto:cdunkin@dfcindustrial.com">
+<span class="material-icons text-sm mr-2 text-primary">email</span> cdunkin@dfcindustrial.com
+                                    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-700 pt-8">
+<p class="text-base text-gray-400 xl:text-center">
+                    © 2024 Patriot Blind Solutions. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
