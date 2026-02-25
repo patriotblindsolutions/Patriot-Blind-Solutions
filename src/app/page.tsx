@@ -492,9 +492,9 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-12 border-t border-gray-700 pt-8">
+                    <div className="mt-12 border-t border-gray-700 pt-8 pb-20 md:pb-0">
                         <p className="text-base text-gray-400 xl:text-center">
-                            © 2024 Patriot Blind Solutions. All rights reserved.
+                            © 2026 Patriot Blind Solutions. All rights reserved.
                         </p>
                     </div>
                 </div>
