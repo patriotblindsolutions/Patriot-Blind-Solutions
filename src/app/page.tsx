@@ -177,7 +177,7 @@ export default function Home() {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/paddle-blind.png" alt="Paddle Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Paddle Blinds</h4>
@@ -187,7 +187,7 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/spectacle-blind.png" alt="Spectacle Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Spectacle Blinds</h4>
@@ -197,7 +197,7 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/slip-blind.png" alt="Slip Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Slip Blinds</h4>
@@ -207,7 +207,7 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/blind-flange.png" alt="Blind Flange" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Blind Flanges</h4>
@@ -217,7 +217,7 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/hydrotest-blind.png" alt="Hydrotest Blind" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Hydrotest Blinds</h4>
@@ -227,7 +227,7 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-32 rounded mb-4 overflow-hidden">
+                                    <div className="h-48 rounded mb-4 overflow-hidden">
                                         <img src="/custom-blind.png" alt="Custom Fabrication" className="w-full h-full object-cover" />
                                     </div>
                                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Custom Fabrication</h4>
@@ -478,8 +478,9 @@ export default function Home() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="text-base text-gray-400 hover:text-white flex items-center" href="mailto:cdunkin@dfcindustrial.com">
-                                                <span className="material-icons text-sm mr-2 text-primary">email</span> cdunkin@dfcindustrial.com
+                                            <a className="text-base text-gray-400 hover:text-white flex items-start" href="mailto:cdunkin@dfcindustrial.com">
+                                                <span className="material-icons text-sm mr-2 mt-1 text-primary flex-shrink-0">email</span>
+                                                <span className="break-all">cdunkin@dfcindustrial.com</span>
                                             </a>
                                         </li>
                                     </ul>
