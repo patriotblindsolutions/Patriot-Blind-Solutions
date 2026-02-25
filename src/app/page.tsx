@@ -131,7 +131,7 @@ export default function Home() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="lg:w-1/2 bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <div className="lg:w-1/2 bg-white dark:bg-gray-900 flex items-center justify-center p-8">
                             <img alt="Patriot Blind Solutions Logo" className="w-48 h-auto object-contain" src="/logo.png" />
                         </div>
                     </div>
