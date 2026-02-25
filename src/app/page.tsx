@@ -46,9 +46,9 @@ export default function Home() {
             </header>
             <div className="relative bg-secondary dark:bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0">
-                    <img alt="Industrial Refinery Background" className="w-full h-full object-cover opacity-20 dark:opacity-30 mix-blend-overlay" src="/flyer.png" />
-                    <div aria-hidden="true" className="absolute inset-0 bg-secondary/80 dark:bg-black/80 mix-blend-multiply"></div>
-                    <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-transparent dark:from-black/90"></div>
+                    <img alt="Industrial Refinery Background" className="w-full h-full object-cover opacity-10 dark:opacity-15 mix-blend-overlay" src="/flyer.png" />
+                    <div aria-hidden="true" className="absolute inset-0 bg-secondary/95 dark:bg-black/95 mix-blend-multiply"></div>
+                    <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-secondary to-secondary/70 dark:from-black/95"></div>
                 </div>
                 <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-display uppercase text-left">Positive <span className="text-primary">Isolation</span> Management.<br />Turnaround Solutions Ready.</h1>
