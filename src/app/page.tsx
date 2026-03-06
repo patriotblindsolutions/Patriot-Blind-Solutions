@@ -12,12 +12,7 @@ export default function Home() {
                         <div className="flex-shrink-0 flex items-center">
                             <img alt="Patriot Blind Solutions Logo" className="h-16 w-auto" src="/logo.png" />
                         </div>
-                        <nav className="hidden md:flex space-x-8">
-                            <a className="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Blinding Management</a>
-                            <a className="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#inventory">Isolation Inventory</a>
-                            <a className="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#specs">Technical Specs</a>
-                            <a className="text-gray-700 dark:text-gray-300 hover:text-secondary dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#quote">Contact</a>
-                        </nav>
+
                         <div className="hidden md:flex items-center">
                             <a className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors" href="tel:8324883168">
                                 <span className="material-icons mr-2 text-sm">phone</span>
@@ -29,24 +24,11 @@ export default function Home() {
                                 <span className="material-icons text-base mr-1">phone</span>
                                 <span>Call Now</span>
                             </a>
-                            <button aria-controls="mobile-menu" aria-expanded="false" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary" type="button">
-                                <span className="sr-only">Open main menu</span>
-                                <span className="material-icons">menu</span>
-                            </button>
+
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:hidden bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700" id="mobile-menu">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#">Blinding Management</a>
-                        <a className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#inventory">Isolation Inventory</a>
-                        <a className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#specs">Technical Specs</a>
-                        <a className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#quote">Contact</a>
-                        <a className="block w-full text-center px-4 py-3 mt-4 rounded-md shadow-sm text-base font-bold text-white bg-primary hover:bg-red-700" href="tel:8324883168">
-                            Call 24/7 Support
-                        </a>
-                    </div>
-                </div>
+
             </header>
             <div className="relative bg-secondary dark:bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0">
@@ -57,266 +39,88 @@ export default function Home() {
                 <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-display uppercase text-left">Positive <span className="text-primary">Isolation</span> Management.<br />Turnaround Solutions Ready.</h1>
                     <p className="mt-6 text-xl text-gray-200 max-w-3xl text-left">The industry's most comprehensive Blinding Management System for refineries and chemical plants. We provide full-scale positive isolation solutions with meticulous tracking and MTR accountability for your critical turnarounds.</p>
-                    <div className="mt-10 max-w-sm sm:max-w-none flex justify-start">
-                        <div className="space-y-4 sm:space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                            <a className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-red-700 sm:px-8" href="#quote">
-                                Request a Quote
-                            </a>
-                            <a className="flex items-center justify-center px-4 py-3 border border-gray-300 dark:border-gray-500 text-base font-medium rounded-md shadow-sm text-white bg-transparent hover:bg-white/10 sm:px-8" href="#inventory">
-                                View Inventory
-                            </a>
-                        </div>
+                    <div className="mt-12 flex justify-start">
+                        <a className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-red-700 sm:px-8" href="#quote">
+                            Request a Quote
+                        </a>
                     </div>
                 </div>
             </div>
-            <section className="py-16 bg-surface-light dark:bg-surface-dark">
+
+
+
+            <section className="py-24 bg-white dark:bg-gray-800" id="management">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-base text-primary font-semibold tracking-wide uppercase">Industrial Blinding Management System</h2>
-                        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl font-display">Engineered for Critical Turnarounds</p>
-                        <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 mx-auto">Our system ensures 100% positive isolation compliance through precision inventory tracking and custom industrial rack systems, eliminating lost tool time in high-stakes environments.</p>
+                    <div className="text-center">
+                        <h2 className="text-base text-primary font-semibold tracking-wide uppercase font-display">Industrial Equipment Rental Solutions</h2>
+                        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl font-display">
+                            Seamless Support for Critical Turnarounds
+                        </p>
+                        <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 lg:mx-auto">
+                            Our system ensures 100% positive isolation compliance through high-quality equipment rentals and custom industrial rack systems, eliminating lost tool time in high-stakes environments.
+                        </p>
                     </div>
-                    <div className="mt-10">
-                        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-                            <div className="relative">
-                                <dt>
-                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
-                                        <span className="material-icons">storage</span>
-                                    </div>
-                                    <p className="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">Custom Steel Blind Racks</p>
-                                </dt>
-                                <dd className="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
-                                    Heavy-duty, organized, labeled, and lockable racks ensuring your isolation blinds are stored safely and accessible. Core differentiator for job site safety and efficiency.
-                                </dd>
+
+                    <div className="mt-20">
+                        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+                            <div className="flex flex-col items-center lg:items-start">
+                                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
+                                    <span className="material-icons">reorder</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Custom Steel Blind Racks</h3>
+                                <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
+                                    Heavy-duty, organized, labeled, and lockable racks ensuring your isolation equipment is stored safely and accessible. Core differentiator for job site safety and efficiency.
+                                </p>
                             </div>
-                            <div className="relative">
-                                <dt>
-                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
-                                        <span className="material-icons">qr_code_scanner</span>
-                                    </div>
-                                    <p className="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">Precision Inventory Tracking</p>
-                                </dt>
-                                <dd className="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
-                                    Eliminate lost blinds and maximize tool time with our meticulous tracking system. Real-time accountability for every piece of isolation hardware on your site.
-                                </dd>
+
+                            <div className="flex flex-col items-center lg:items-start">
+                                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
+                                    <span className="material-icons">precision_manufacturing</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Jobsite Rental Support</h3>
+                                <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
+                                    Providing the hardware you need, when you need it. Our rental solutions are tailored for heavy industrial turnarounds and maintenance cycles.
+                                </p>
                             </div>
-                            <div className="relative">
-                                <dt>
-                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
-                                        <span className="material-icons">local_shipping</span>
-                                    </div>
-                                    <p className="ml-16 text-lg leading-6 font-bold text-gray-900 dark:text-white">24/7 Turnaround Logistics</p>
-                                </dt>
-                                <dd className="mt-2 ml-16 text-base text-gray-500 dark:text-gray-400">
-                                    Fast response &amp; flexible logistics for shutdowns. Whether it's a scheduled delivery or emergency response, our industrial support team is available around the clock.
-                                </dd>
+
+                            <div className="flex flex-col items-center lg:items-start">
+                                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
+                                    <span className="material-icons">local_shipping</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">24/7 Turnaround Logistics</h3>
+                                <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
+                                    Fast response & flexible logistics for shutdowns. Whether it&apos;s a scheduled delivery or emergency response, our industrial support team is available around the clock.
+                                </p>
                             </div>
-                        </dl>
-                    </div>
-                    <div className="mt-16 bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 lg:flex">
-                        <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Storage &amp; Jobsite Support</h3>
-                            <ul className="space-y-3">
-                                <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-2">check_circle</span>
-                                    <span className="text-gray-600 dark:text-gray-300">Industrial blind racks available for rent</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-2">check_circle</span>
-                                    <span className="text-gray-600 dark:text-gray-300">Organized jobsite storage &amp; staging systems</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-2">check_circle</span>
-                                    <span className="text-gray-600 dark:text-gray-300">Fast response &amp; flexible logistics</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-2">check_circle</span>
-                                    <span className="text-gray-600 dark:text-gray-300">Experienced refinery support personnel</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="lg:w-1/2 bg-white dark:bg-gray-900 flex items-center justify-center p-8">
-                            <img alt="Patriot Blind Solutions Logo" className="w-48 h-auto object-contain" src="/logo.png" />
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className="py-16 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" id="inventory">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                        <div className="lg:col-span-3 mb-8 lg:mb-0">
-                            <nav className="sticky top-24">
-                                <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 border-b pb-2 dark:border-gray-600">Standard Materials</h3>
-                                <ul className="space-y-2 mb-8">
-                                    <li className="flex items-center text-gray-600 dark:text-gray-300">
-                                        <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-                                        ASTM A516 Grade 70
-                                    </li>
-                                    <li className="flex items-center text-gray-600 dark:text-gray-300">
-                                        <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-                                        A36 Carbon Steel
-                                    </li>
-                                    <li className="flex items-center text-gray-600 dark:text-gray-300">
-                                        <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-                                        Stainless 304 &amp; 316
-                                    </li>
-                                    <li className="flex items-center text-gray-600 dark:text-gray-300">
-                                        <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-                                        Specialty Alloys (Monel, Inconel)
-                                    </li>
+
+                    <div className="mt-20 bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-xl">
+                        <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <div className="p-12">
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Storage & Jobsite Support</h3>
+                                <ul className="space-y-4">
+                                    {[
+                                        "Industrial blind racks available for rent",
+                                        "Organized jobsite storage & staging systems",
+                                        "Fast response & flexible logistics",
+                                        "Experienced refinery support personnel"
+                                    ].map((item, i) => (
+                                        <li className="flex items-center text-gray-700 dark:text-gray-300" key={i}>
+                                            <span className="material-icons text-primary mr-3">check_circle</span>
+                                            {item}
+                                        </li>
+                                    ))}
                                 </ul>
-                                <div className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 border-l-4 border-l-primary">
-                                    <div className="flex items-center mb-2">
-                                        <span className="material-icons text-primary mr-2">verified_user</span>
-                                        <span className="font-bold text-gray-900 dark:text-white text-sm">Quality Assurance</span>
-                                    </div>
-                                    <p className="text-xs text-gray-500 dark:text-gray-400"><strong className="text-gray-900 dark:text-white block mb-1 uppercase">Full MTR Documentation</strong> Included with every delivery. Traceability reports available upon request.</p>
-                                </div>
-                            </nav>
-                        </div>
-                        <div className="lg:col-span-9">
-                            <div className="mb-8">
-                                <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white font-display">Technical Inventory</h2>
-                                <p className="mt-2 text-gray-600 dark:text-gray-400">Comprehensive selection of isolation blinds for immediate refinery deployment.</p>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/paddle-blind.png" alt="Paddle Blind" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Paddle Blinds</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Standard isolation paddle blinds available in all pressure classes.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
-                                        View Specs <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/spectacle-blind.png" alt="Spectacle Blind" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Spectacle Blinds</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Figure-8 style blinds for permanent installation or frequent use.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
-                                        View Specs <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/slip-blind.png" alt="Slip Blind" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Slip Blinds</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Versatile slip blinds designed for insertion between flanges.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
-                                        View Specs <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/blind-flange.png" alt="Blind Flange" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Blind Flanges</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Heavy-duty blind flanges for end-of-line isolation.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
-                                        View Specs <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/hydrotest-blind.png" alt="Hydrotest Blind" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Hydrotest Blinds</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">High-pressure rated blinds specifically for hydrotesting.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#specs">
-                                        View Specs <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                                <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow p-6 flex flex-col">
-                                    <div className="h-48 rounded mb-4 overflow-hidden">
-                                        <img src="/custom-blind.png" alt="Custom Fabrication" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Custom Fabrication</h4>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Need specific dimensions? We offer custom fabrication services.</p>
-                                    <a className="text-primary font-semibold hover:text-red-700 text-sm flex items-center" href="#quote">
-                                        Contact Us <span className="material-icons text-sm ml-1">arrow_forward</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="mt-16" id="specs">
-                                <h3 className="text-2xl font-extrabold text-gray-900 dark:text-white font-display mb-6">Industrial Engineering Specifications</h3>
-                                <div className="w-full rounded-lg border border-gray-300 dark:border-gray-700 shadow-md overflow-hidden">
-                                    {/* Desktop table */}
-                                    <div className="hidden sm:block overflow-x-auto">
-                                        <table className="min-w-full divide-y divide-gray-300 dark:divide-gray-700">
-                                            <thead className="bg-secondary">
-                                                <tr>
-                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Blind Type</th>
-                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Available Sizes (NPS)</th>
-                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Pressure Class (ANSI)</th>
-                                                    <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider" scope="col">Standard Materials</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Paddle Blinds</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 72"</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
-                                                </tr>
-                                                <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Spectacle Blinds</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A516-70, 304/316 SS</td>
-                                                </tr>
-                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Slip Blinds / Spacers</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 60"</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 1500#</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">Carbon, SS, Alloys</td>
-                                                </tr>
-                                                <tr className="bg-gray-50 dark:bg-gray-900/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Blind Flanges</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">1/2" – 48"</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">150# – 2500#</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">A105, A350 LF2</td>
-                                                </tr>
-                                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                                    <td className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white">Hydrotest Blinds</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Custom Spec</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Up to 10,000 PSI</td>
-                                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 font-mono text-xs">High Yield Carbon</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    {/* Mobile stacked cards */}
-                                    <div className="sm:hidden divide-y divide-gray-200 dark:divide-gray-700">
-                                        {[
-                                            { type: "Paddle Blinds", sizes: '1/2" – 72"', pressure: "150# – 2500#", material: "A516-70, 304/316 SS" },
-                                            { type: "Spectacle Blinds", sizes: '1/2" – 48"', pressure: "150# – 2500#", material: "A516-70, 304/316 SS" },
-                                            { type: "Slip Blinds / Spacers", sizes: '1/2" – 60"', pressure: "150# – 1500#", material: "Carbon, SS, Alloys" },
-                                            { type: "Blind Flanges", sizes: '1/2" – 48"', pressure: "150# – 2500#", material: "A105, A350 LF2" },
-                                            { type: "Hydrotest Blinds", sizes: "Custom Spec", pressure: "Up to 10,000 PSI", material: "High Yield Carbon" },
-                                        ].map((row, i) => (
-                                            <div key={i} className={`p-4 ${i % 2 === 0 ? "bg-white dark:bg-gray-800" : "bg-gray-50 dark:bg-gray-900/50"}`}>
-                                                <p className="font-bold text-gray-900 dark:text-white mb-2">{row.type}</p>
-                                                <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
-                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Sizes (NPS)</span>
-                                                    <span className="text-gray-700 dark:text-gray-300">{row.sizes}</span>
-                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Pressure Class</span>
-                                                    <span className="text-gray-700 dark:text-gray-300">{row.pressure}</span>
-                                                    <span className="text-gray-500 dark:text-gray-400 font-medium">Materials</span>
-                                                    <span className="text-gray-700 dark:text-gray-300 font-mono text-xs">{row.material}</span>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
+                            <div className="bg-white dark:bg-gray-800 flex items-center justify-center p-12 border-t lg:border-t-0 lg:border-l border-gray-200 dark:border-gray-700">
+                                <img alt="Patriot Blind Solutions Secondary Logo" className="h-48" src="/logo.png" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section className="py-16 bg-surface-light dark:bg-surface-dark relative" id="quote">
                 <div className="absolute top-0 bottom-0 right-0 w-1/2 bg-gray-100 dark:bg-gray-900 hidden lg:block"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -329,7 +133,7 @@ export default function Home() {
                             <div className="mt-8 space-y-4">
                                 <div className="flex items-center">
                                     <span className="material-icons text-primary mr-3">email</span>
-                                    <span className="text-gray-700 dark:text-gray-300">cdunkin@dfcindustrial.com</span>
+                                    <span className="text-gray-700 dark:text-gray-300">chris@patriotblindsolutions.com</span>
                                 </div>
                                 <div className="flex items-center">
                                     <span className="material-icons text-primary mr-3">phone</span>
@@ -343,22 +147,7 @@ export default function Home() {
                         </div>
                         <div className="lg:col-span-7">
                             <form action="#" className="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 sm:p-10 border border-gray-200 dark:border-gray-700" method="POST">
-                                <div className="mb-8 w-full">
-                                    <div className="grid grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600 relative">
-                                        <div className="relative">
-                                            <input defaultChecked={true} className="segmented-control-input sr-only peer" id="rental_short" name="rental_type" type="radio" value="short-term" />
-                                            <label className="block w-full text-center py-2.5 px-4 text-sm font-bold rounded-md cursor-pointer transition-all duration-200 ease-in-out" htmlFor="rental_short">
-                                                Turnaround Rental
-                                            </label>
-                                        </div>
-                                        <div className="relative">
-                                            <input className="segmented-control-input sr-only peer" id="rental_perm" name="rental_type" type="radio" value="permanent" />
-                                            <label className="block w-full text-center py-2.5 px-4 text-sm font-bold rounded-md cursor-pointer transition-all duration-200 ease-in-out" htmlFor="rental_perm">
-                                                Permanent Purchase
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="first-name">First name</label>
@@ -434,11 +223,11 @@ export default function Home() {
             <footer aria-labelledby="footer-heading" className="bg-secondary dark:bg-black">
                 <h2 className="sr-only" id="footer-heading">Footer</h2>
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                    <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                        <div className="space-y-8 xl:col-span-1">
-                            <img alt="Patriot Blind Solutions" className="h-12 w-auto" src="/logo.png" />
+                    <div className="flex flex-col items-center text-center space-y-12">
+                        <div className="space-y-8 max-w-2xl">
+                            <img alt="Patriot Blind Solutions" className="h-12 w-auto mx-auto" src="/logo.png" />
                             <p className="text-gray-300 text-sm leading-6">The nationwide leader in industrial Blinding Management Systems. Providing critical positive isolation support for large-scale refinery and chemical plant turnarounds.</p>
-                            <div className="flex space-x-6">
+                            <div className="flex justify-center space-x-6">
                                 <a className="text-gray-400 hover:text-white" href="#">
                                     <span className="sr-only">LinkedIn</span>
                                     <svg aria-hidden="true" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -447,53 +236,27 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                        <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                            <div className="md:grid md:grid-cols-2 md:gap-8">
-                                <div>
-                                    <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Products</h3>
-                                    <ul className="mt-4 space-y-4">
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Isolation Blinds</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Spectacle Blinds</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Slip Blinds</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Blind Flanges</a></li>
-                                    </ul>
-                                </div>
-                                <div className="mt-12 md:mt-0">
-                                    <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Support</h3>
-                                    <ul className="mt-4 space-y-4">
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Rent vs Purchase</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Logistics</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">MTR Documentation</a></li>
-                                        <li><a className="text-base text-gray-400 hover:text-white" href="#">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="md:grid md:grid-cols-1 md:gap-8">
-                                <div>
-                                    <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
-                                    <ul className="mt-4 space-y-4">
-                                        <li className="text-base text-gray-400">
-                                            <span className="block text-white font-medium">Christopher Dunkin</span>
-                                            Nationwide Blinding Solutions
-                                        </li>
-                                        <li>
-                                            <a className="text-base text-gray-400 hover:text-white flex items-center" href="tel:8324883168">
-                                                <span className="material-icons text-sm mr-2 text-primary">phone</span> 832 488 3168
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="text-base text-gray-400 hover:text-white flex items-start" href="mailto:cdunkin@dfcindustrial.com">
-                                                <span className="material-icons text-sm mr-2 mt-1 text-primary flex-shrink-0">email</span>
-                                                <span className="break-all">cdunkin@dfcindustrial.com</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div className="w-full max-w-2xl">
+                            <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contact</h3>
+                            <ul className="mt-4 space-y-4">
+                                <li className="text-base text-gray-400">
+                                    <span className="block text-white font-medium">Christopher Dunkin</span>
+                                    Nationwide Blinding Solutions
+                                </li>
+                                <li className="flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-8">
+                                    <a className="text-base text-gray-400 hover:text-white flex items-center" href="tel:8324883168">
+                                        <span className="material-icons text-sm mr-2 text-primary">phone</span> 832 488 3168
+                                    </a>
+                                    <a className="text-base text-gray-400 hover:text-white flex items-center" href="mailto:chris@patriotblindsolutions.com">
+                                        <span className="material-icons text-sm mr-2 text-primary flex-shrink-0">email</span>
+                                        <span className="whitespace-nowrap text-sm sm:text-base">chris@patriotblindsolutions.com</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="mt-12 border-t border-gray-700 pt-8 pb-20 md:pb-0">
-                        <p className="text-base text-gray-400 xl:text-center">
+                        <p className="text-base text-gray-400 text-center">
                             © 2026 Patriot Blind Solutions. All rights reserved.
                         </p>
                     </div>
