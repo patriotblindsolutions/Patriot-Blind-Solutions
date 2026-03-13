@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, MapPin, Truck, Factory, AlignJustify, CheckCircle } from "lucide-react";
 
 export default function Home() {
     return (
@@ -15,13 +15,13 @@ export default function Home() {
 
                         <div className="hidden md:flex items-center">
                             <a className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors" href="tel:8324883168">
-                                <span className="material-icons mr-2 text-sm">phone</span>
+                                <Phone className="mr-2 h-4 w-4" />
                                 24/7 Support: 832-488-3168
                             </a>
                         </div>
                         <div className="flex items-center gap-2 md:hidden">
                             <a href="tel:8324883168" className="inline-flex items-center justify-center px-3 py-2 rounded-md text-white bg-primary text-sm font-bold">
-                                <span className="material-icons text-base mr-1">phone</span>
+                                <Phone className="h-4 w-4 mr-1" />
                                 <span>Call Now</span>
                             </a>
 
@@ -65,7 +65,7 @@ export default function Home() {
                         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
                             <div className="flex flex-col items-center lg:items-start">
                                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
-                                    <span className="material-icons">reorder</span>
+                                    <AlignJustify className="h-6 w-6" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Custom Steel Blind Racks</h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
@@ -75,7 +75,7 @@ export default function Home() {
 
                             <div className="flex flex-col items-center lg:items-start">
                                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
-                                    <span className="material-icons">precision_manufacturing</span>
+                                    <Factory className="h-6 w-6" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Jobsite Rental Support</h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
@@ -85,7 +85,7 @@ export default function Home() {
 
                             <div className="flex flex-col items-center lg:items-start">
                                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white mb-6">
-                                    <span className="material-icons">local_shipping</span>
+                                    <Truck className="h-6 w-6" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">24/7 Turnaround Logistics</h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-center lg:text-left">
@@ -107,7 +107,7 @@ export default function Home() {
                                         "Experienced refinery support personnel"
                                     ].map((item, i) => (
                                         <li className="flex items-center text-gray-700 dark:text-gray-300" key={i}>
-                                            <span className="material-icons text-primary mr-3">check_circle</span>
+                                            <CheckCircle className="h-5 w-5 text-primary mr-3" />
                                             {item}
                                         </li>
                                     ))}
@@ -132,15 +132,15 @@ export default function Home() {
                             </p>
                             <div className="mt-8 space-y-4">
                                 <div className="flex items-center">
-                                    <span className="material-icons text-primary mr-3">email</span>
+                                    <Mail className="h-5 w-5 text-primary mr-3" />
                                     <span className="text-gray-700 dark:text-gray-300">chris@patriotblindsolutions.com</span>
                                 </div>
                                 <div className="flex items-center">
-                                    <span className="material-icons text-primary mr-3">phone</span>
+                                    <Phone className="h-5 w-5 text-primary mr-3" />
                                     <span className="text-gray-700 dark:text-gray-300">832 488 3168</span>
                                 </div>
                                 <div className="flex items-center">
-                                    <span className="material-icons text-primary mr-3">location_on</span>
+                                    <MapPin className="h-5 w-5 text-primary mr-3" />
                                     <span className="text-gray-700 dark:text-gray-300">Houston, Texas</span>
                                 </div>
                             </div>
@@ -245,10 +245,10 @@ export default function Home() {
                                 </li>
                                 <li className="flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-8">
                                     <a className="text-base text-gray-400 hover:text-white flex items-center" href="tel:8324883168">
-                                        <span className="material-icons text-sm mr-2 text-primary">phone</span> 832 488 3168
+                                        <Phone className="h-4 w-4 mr-2 text-primary" /> 832 488 3168
                                     </a>
                                     <a className="text-base text-gray-400 hover:text-white flex items-center" href="mailto:chris@patriotblindsolutions.com">
-                                        <span className="material-icons text-sm mr-2 text-primary flex-shrink-0">email</span>
+                                        <Mail className="h-4 w-4 mr-2 text-primary flex-shrink-0" />
                                         <span className="whitespace-nowrap text-sm sm:text-base">chris@patriotblindsolutions.com</span>
                                     </a>
                                 </li>
@@ -266,7 +266,7 @@ export default function Home() {
             {/* Mobile sticky emergency call bar */}
             <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary shadow-2xl">
                 <a href="tel:8324883168" className="flex items-center justify-center gap-3 py-4 text-white font-bold text-base w-full">
-                    <span className="material-icons text-xl">phone</span>
+                    <Phone className="h-6 w-6" />
                     <span>24/7 Emergency Support: 832-488-3168</span>
                 </a>
             </div>
