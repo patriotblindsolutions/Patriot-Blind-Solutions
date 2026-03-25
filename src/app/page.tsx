@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, MapPin, Truck, Factory, AlignJustify, CheckCircle } from "lucide-react";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     return (
@@ -146,76 +147,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="lg:col-span-7">
-                            <form action="#" className="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8 sm:p-10 border border-gray-200 dark:border-gray-700" method="POST">
-
-                                <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="first-name">First name</label>
-                                        <div className="mt-1">
-                                            <input autoComplete="given-name" className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="first-name" name="first-name" type="text" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="last-name">Last name</label>
-                                        <div className="mt-1">
-                                            <input autoComplete="family-name" className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="last-name" name="last-name" type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2">
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="company">Company / Contractor</label>
-                                        <div className="mt-1">
-                                            <input autoComplete="organization" className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="company" name="company" type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2">
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="email">Work Email</label>
-                                        <div className="mt-1">
-                                            <input autoComplete="email" className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="email" name="email" type="email" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="project-name">Project/Site Name</label>
-                                        <div className="mt-1">
-                                            <input className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="project-name" name="project-name" placeholder="e.g. 2024 Fall Turnaround" required={true} type="text" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="plant-location">Plant Location</label>
-                                        <div className="mt-1">
-                                            <input className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="plant-location" name="plant-location" placeholder="City, State" required={true} type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2">
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="dates">Dates Needed</label>
-                                        <div className="mt-1">
-                                            <input className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md" id="dates" name="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2">
-                                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300" htmlFor="specs">Upload Specs / Blind List (Optional)</label>
-                                        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-md bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer">
-                                            <div className="space-y-1 text-center">
-                                                <svg aria-hidden="true" className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 48 48">
-                                                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-                                                </svg>
-                                                <div className="flex text-sm text-gray-600 dark:text-gray-300">
-                                                    <label className="relative cursor-pointer rounded-md font-medium text-primary hover:text-red-700 focus-within:outline-none" htmlFor="file-upload">
-                                                        <span>Upload a file</span>
-                                                        <input className="sr-only" id="file-upload" name="file-upload" type="file" />
-                                                    </label>
-                                                    <p className="pl-1">or drag and drop</p>
-                                                </div>
-                                                <p className="text-xs text-gray-500 dark:text-gray-400">PDF, Excel, JPG up to 10MB</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2">
-                                        <button className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors" type="submit">
-                                            Submit Industrial Request
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>

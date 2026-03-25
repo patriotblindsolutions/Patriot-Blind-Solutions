@@ -41,14 +41,14 @@
 - **After Andy is done:** Go to Cloudflare → Workers & Pages → patriot-blind-solutions → Custom Domains → click **"Check DNS records"**
 
 ### 2. Resend Email Integration (Contact Form)
-- **Status:** Not yet set up
+- **Status:** Completed (Wired up API route `/api/contact`)
 - **Goal:** Form submissions on the site send an email to `chris@patriotblindsolutions.com`
-- **What's needed:**
-  1. Andy or Tod creates a [Resend](https://resend.com) account
-  2. Verifies `patriotblindsolutions.com` domain in Resend (adds SPF/DKIM DNS records in GoDaddy)
-  3. Creates an API key and sends it to Jonathan
-  4. Jonathan adds `RESEND_API_KEY` as an environment variable in Cloudflare Pages Settings
-  5. Jonathan wires up the form with a Next.js server action calling the Resend API
+- **What's done:**
+  1. Andy or Tod created a [Resend](https://resend.com) account
+  2. Verified `patriotblindsolutions.com` domain in Resend
+  3. `RESEND_API_KEY` added to Cloudflare Pages environment variables
+  4. Form transitioned to a React client component to provide dynamic success/error handling
+  5. Back-end built using edge-compatible Next.js API Routes
 - **Existing email accounts (GoDaddy Email Essentials):**
   - `todd@patriotblindsolutions.com`
   - `chris@patriotblindsolutions.com`
